@@ -1,5 +1,7 @@
 BlogHand::Application.routes.draw do
-  resources :posts
+  resources :posts do
+  	resources :comentarios
+  end
 
   get "home/index"
 
